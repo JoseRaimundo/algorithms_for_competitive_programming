@@ -1,0 +1,85 @@
+iniciar um projeto no Git:
+projeto do zero:
+ir até o [diretório-raiz-do-projeto]
+$ git init
+$ git add *
+$ git commit -m ‘versao inicial do projeto’
+projeto já existente:
+$ git clone [url-do-projeto]
+marcar um arquivo como staged, ou seja, preparado para commit:
+$ git add [nome-do-arquivo]
+ver item (*) abaixo;
+verificar status de um arquivo 
+(untracked, unmodified, modified, staged):
+$ git status
+ignorar arquivos no Git:
+criar arquivo .gitignore contendo os arquivos que deverão ser ignorados;
+comitar arquivo:
+$ git -m ‘mensagem’
+(*) comitar arquivo nao marcado como staged:
+$ git -a -m ‘mensagem’
+excluir um arquivo do git e também do diretório de trabalho:
+$ git rm [nome-do-arquivo]
+$ git commit -m ‘mensagem’
+excluir um arquivo do git e mantê-lo no diretório de trabalho:
+$ git rm –cached [nome-do-arquivo]
+renomear ou mover um arquivo::
+$ git mv [nome-origem] [nome-destino]
+visualizar o historico de commits:
+$ git log
+$ gitk
+alterar a mensagem do ultimo commit:
+$ git commit –amend
+voltar um arquivo commitado para uma versao anterior:
+$ git checkout — [nome-arquivo]
+listar servidores remotos:
+$ git remote -v
+visualizar alteracoes feitas em servidores remotos:
+$ git fetch [servidor]
+trazer e atualizando as alteracoes feitas remotamente:
+$ git pull [servidor-remoto] 
+subir alteracoes no servidor remoto:
+$ git push [servidor-remoto] , exemplo:
+$ git push origin master (assumindo que o servidor remoto é origin e que a branch é master)
+listar tags:
+$ git [nome-da-tag]
+criar tags:
+$ git tag -a -m “comentario” [descricao-tag], exemplo:
+$ git tag -a -m “primeira versao do appender4log4j”
+version-0.0.1 compartilhar tags remotamente:
+$ git push [servidor-remoto] [descricao-tag]
+$ git push [servidor-remoto] –tags
+criar branchs:
+$ git branch [nome-branch]
+remover branchs:
+$ git branch -d [nome-branch]
+mover para uma branch existente:
+$ git checkout [nome-branch]
+criar e mover para uma branch ao mesmo tempo:
+$ git checkout -b [nome-branch]
+criar e mover para uma branch ao mesmo tempo:
+ir para a branch que irá receber a outra branch;
+$ git checkout [nome-branch]
+executar comando para fazer o merge:
+$ git merge [nome-branch-que-contem-novo-conteudo]
+visualizar conflitos no merge:
+$ git status
+marcar o conflito como resolvido, executar nas 2 branches:
+$ git add [nome-arquivo-conflitado]
+visualizar todas as branches:
+$ git branch
+visualizar os últimos commits de cada branch:
+$ git branch -v
+visualizar todas as “merged branches”:
+$ git branch –merged
+visualizar todas as “no merged branches”:
+$ git branch –no-merged
+
+
+
+
+
+
+
+
+
