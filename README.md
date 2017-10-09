@@ -1,11 +1,11 @@
 # Maratona de programção
 
 Aqui há soluções de problemas do URI, UVA, SPOJ, CODEFORCES E ETC.
-Essas soluções são fruto de estudos e dedicação, também será possível encontrar arquivos vazios com formato de entrada, se isso acotnecer ignoreos e continue seu treinamento.
+Essas soluções são fruto de estudos e dedicação, também será possível encontrar arquivos vazios com formato de entrada, se isso acontecer ignore-os e continue seu treinamento.
 
 ### Como compilar um programa no Linux
 #### C/C++
-Para programas em C/C++ é necessário instalar as bibliotecas para a compilação e execução de programas escritos em C/C++. Para isso você pode digitar no terminal (Será necessário usar a senha):
+Para programas em C/C++ é necessário instalar as bibliotecas para a compilação e execução de programas escritos em C/C++. Para isso você pode digitar no terminal (É preciso usar a senha):
 ```sh
 $ sudo apt-get install build-essential
 ```
